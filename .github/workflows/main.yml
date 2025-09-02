@@ -11,6 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Checkout bujuan_music_api
+        uses: actions/checkout@v3
+        with:
+          repository: 2697a/bujuan_music_api
+          path: ../bujuan_music_api
+          
       - name: Setup Java
         uses: actions/setup-java@v3
         with:

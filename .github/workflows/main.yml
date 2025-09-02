@@ -56,6 +56,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      
+      - name: Checkout bujuan_music_api
+        uses: actions/checkout@v3
+        with:
+          repository: 2697a/bujuan_music_api
+          path: bujuan_music_api
+
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
 
